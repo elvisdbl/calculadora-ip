@@ -10,7 +10,7 @@
           >
             <div class="col-sm-12 col-md-12 col-lg-12">
               <h3>
-                <label for="inputName" class="form-label">
+                <label for="inputName" class="form-label text-light">
                   Calculadora IP en VSLM!
                 </label>
               </h3>
@@ -28,7 +28,7 @@
             <!-- Inicio de la Calculadora -->
             <div class="mb-3">
               <div class="row g-4">
-                <div class="col-3">
+                <div class="col-3 text-light">
                   <label for="InputCalculador1" class="form-label"
                     >1 octeto</label
                   >
@@ -44,7 +44,7 @@
                     v-model="octeto1"
                   />
                 </div>
-                <div class="col-3">
+                <div class="col-3 text-light">
                   <label for="InputCalculador2" class="form-label"
                     >2 octeto</label
                   >
@@ -60,7 +60,7 @@
                     v-model="octeto2"
                   />
                 </div>
-                <div class="col-3">
+                <div class="col-3 text-light">
                   <label for="InputCalculador3" class="form-label"
                     >3 octeto</label
                   >
@@ -76,7 +76,7 @@
                     v-model="octeto3"
                   />
                 </div>
-                <div class="col-3">
+                <div class="col-3 text-light">
                   <label for="InputCalculador4" class="form-label"
                     >4 octeto</label
                   >
@@ -96,7 +96,7 @@
             </div>
 
             <div class="mb-3">
-              <h3>
+              <h3 className="text-light">
                 <label for="nredes" class="form-label"
                   >Subredes que se requiere
                 </label>
@@ -112,7 +112,7 @@
               />
             </div>
 
-            <button type="submit" class="btn btn-outline-dark">
+            <button type="submit" class="btn btn-dark">
               Registrar
             </button>
           </form>
@@ -464,30 +464,15 @@ export default {
 </script>
 <style scoped>
 #formula {
+  
   border: outset;
-  background: #c6ffdd; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ffdde1,
-    #009fff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ffdde1,
-    #009fff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgba(112, 100, 100, 0.157);
+
 }
 .CalculadoraIp {
-  background: #00c6ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ffdde1,
-    #009fff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ffdde1,
-    #009fff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 </style>
